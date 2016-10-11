@@ -2,13 +2,13 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 $doc = JFactory::getDocument();
 $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
+$doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/support/css/style.css" type="text/css" />
-    <script src="/support/js/main.js" type="text/javascript"></script>
+    <jdoc:include type="head" />
 </head>
 <body>
     <!-- main container -->
