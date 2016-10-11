@@ -3,16 +3,18 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 $doc = JFactory::getDocument();
 $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
+$doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.css');
 $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <jdoc:include type="head" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!-- main container -->
-    <div class='main_container'>
+    <div class='container'>
         <!-- header -->
         <div class='header'>Header</div>
         <!-- mid container - includes main content area and right sidebar -->
