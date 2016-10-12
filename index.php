@@ -16,11 +16,21 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     <!-- main container -->
     <div class='container'>
         <!-- header -->
-        <div class='header'>Header</div>
+        <div class="row">
+            <div class='span4'>
+                <jdoc:include type="modules" name="top-left" style="xhtml" />
+            </div>
+            <div class="span4">
+                <jdoc:include type="modules" name="top-middle" style="xhtml" />
+            </div>
+            <div class="span4">
+                <jdoc:include type="modules" name="top-right" style="xhtml" />
+            </div>
+        </div>
         <!-- mid container - includes main content area and right sidebar -->
-        <div class='mid_container'>
+        <div class='row'>
           <!-- main content area -->
-         <div class='main_content_area'>
+         <div class='span12'>
              <jdoc:include type="modules" name="position-3" style="xhtml" />
              <jdoc:include type="message" />
              <jdoc:include type="component" />
@@ -29,8 +39,8 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         </div>
 
         <!-- footer -->
-        <div class='footer'>
-            Footer
+        <div class='row'>
+            <div class="span12">Footer</div>
         </div>
 
     </div>
