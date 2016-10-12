@@ -27,20 +27,25 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
                 <jdoc:include type="modules" name="top-right" style="xhtml" />
             </div>
         </div>
-        <!-- mid container - includes main content area and right sidebar -->
+        <!-- header -->
+        <div class="row">
+            <jdoc:include type="modules" name="header" />
+        </div>
+        <!-- main content area -->
         <div class='row'>
-          <!-- main content area -->
          <div class='span12'>
-             <jdoc:include type="modules" name="position-3" style="xhtml" />
-             <jdoc:include type="message" />
              <jdoc:include type="component" />
+             <jdoc:include type="modules" name="position-1" style="xhtml" />
              <jdoc:include type="modules" name="position-2" style="none" />
+             <jdoc:include type="message" />
          </div>
         </div>
 
         <!-- footer -->
         <div class='row'>
-            <div class="span12">Footer</div>
+            <div class="span12">
+                <jdoc:include type="modules" name="footer" style="none" />
+            </div>
         </div>
 
     </div>

@@ -2,7 +2,6 @@
 .weblinks,
 .category-module,
 .syndicate-module,
-ul.nav.menu,
 #login-form {
          -moz-border-radius: 5px;
          -webkit-border-radius: 5px;
@@ -22,4 +21,8 @@ ul.nav.menu,
 
 .syndicate-module {
          display:block;
+}
+
+ul.nav.menu {
+    
 }
