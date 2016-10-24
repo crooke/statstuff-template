@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 .mostread,
 .weblinks,
 .category-module,
@@ -24,5 +28,16 @@
 }
 
 ul.nav.menu {
+
+}
+
+div.home-header {
+    background-color: #ae4236;
+    padding: 70px;
+    color: white;
     
+}
+
+.home-header h1 {
+    color: white;
 }

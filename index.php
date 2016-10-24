@@ -14,10 +14,10 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
 </head>
 <body>
     <!-- main container -->
-    <div class='container'>
+    <div class="container">
         <!-- header -->
         <div class="row">
-            <div class='span4'>
+            <div class="span4">
                 <jdoc:include type="modules" name="top-left" style="xhtml" />
             </div>
             <div class="span4">
@@ -29,11 +29,13 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         </div>
         <!-- header -->
         <div class="row">
-            <jdoc:include type="modules" name="header" />
+            <div class="span12">
+                <jdoc:include type="modules" name="header" />
+            </div>
         </div>
         <!-- main content area -->
-        <div class='row'>
-         <div class='span12'>
+        <div class="row">
+         <div class="span12">
              <jdoc:include type="component" />
              <jdoc:include type="modules" name="position-1" style="xhtml" />
              <jdoc:include type="modules" name="position-2" style="none" />
@@ -42,7 +44,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         </div>
 
         <!-- footer -->
-        <div class='row'>
+        <div class="row">
             <div class="span12">
                 <jdoc:include type="modules" name="footer" style="none" />
             </div>
